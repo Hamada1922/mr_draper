@@ -24,6 +24,7 @@ languages.onchange = () => {
     location.reload();
   } else {
     document.body.style.direction = "rtl";
+    document.body.style.fontFamily = "Amiri";
     // HEADER
     menu.children[0].textContent = "من نحن";
     menu.children[1].textContent = "بطاقات هدايا";
@@ -160,5 +161,4 @@ languages.onchange = () => {
     // FOOTER
     document.querySelector("footer span").textContent = "تسوق أثناء التنقل:";
   }
-  console.log(languages.value == "arabic");
 };
